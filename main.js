@@ -26,7 +26,7 @@ $(".callModal").on('click', function (event){
      txt.innerHTML = coll[parm].lable[i].lb;
      $(txt).addClass(coll[parm].lable[i].lbClass);
      console.log(txt);
-     $(".modal-body .text-center").append(txt).append("<br />");
+     $(".modal-body .text-center").append(txt);
    }
    console.log($(".modal-body").html()); 
    $(".modal").modal('show');
