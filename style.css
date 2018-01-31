@@ -1,0 +1,97 @@
+* {
+	box-sizing: border-box;
+}
+
+
+nav{
+	font-size: 20px;
+}
+.navbar-brand{
+	font-size: 30px;
+}
+.lead{
+	font-size: 30px;
+}
+.jumbotron{
+	background-image: url("imges/jumbo-bg.jpg");
+	-webkit-background-size: cover;
+	background-size: cover;
+
+}
+.jumbotron img{
+	transition: all 0.3s ease-out 0s;
+}
+.jumbotron img:hover{	
+	transform: scale(1.2);
+}
+
+
+.img-card{
+	position: relative;
+	overflow: hidden;
+}
+.img-card .img-fluid{
+	height: 300px;
+	width: 100%;
+}
+.img-info{
+	font-size: 20px;
+	position: absolute;  
+	text-align: center;
+	top: 50%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.6);
+	color: #fff;
+	visibility: hidden;
+	opacity: 0;
+	margin-bottom: 0;
+	transition: all 0.5s ease-in-out 0.2s;
+	transform: translateY(100%);
+}
+.img-card:hover .img-info{
+	visibility: visible;
+    opacity: 1;
+    transform: translateY(0);  
+}
+.img-card:hover{
+	cursor: pointer;
+}
+
+.row .container h4 a:hover{
+	cursor: pointer;
+}
+
+.contact{
+	font-size: 20px;
+}
+
+.container .nav a{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  opacity: 0.4; 
+  transition: all .5s;
+}
+.container .nav a:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+.twitter{
+	background-image: url(imges/twitter.svg);
+}
+.linkedin{
+	background-image: url(imges/linkedin.svg);
+}
+.github{
+	background-image: url(imges/github.svg);
+}
+
+
+.modal img{
+	width: 60%;	
+}
+.modal .badge{
+	font-size: 1rem;
+}
