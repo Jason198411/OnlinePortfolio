@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
 	<title>Profile</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="100" id="home">
+<body class="bg-light" data-spy="scroll" data-target=".navbar" data-offset="100" id="home">
 	<!-- Nav bar -->
 	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-secondary">
 		<div class="container">
@@ -16,7 +17,7 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 			<div class="navbar-nav">
-			  <a class="nav-item nav-link pl-3" href="#home">Home <span class="sr-only">(current)</span></a>
+			  <a class="nav-item nav-link pl-3" href="#home">Home</a>
 			  <a class="nav-item nav-link pl-3" href="#about">About</a>
 			  <a class="nav-item nav-link pl-3" href="#projects">Projects</a>
 			  <a class="nav-item nav-link pl-3" href="#contact">Contact</a>
@@ -29,7 +30,7 @@
 	<!-- jumbotron begin -->
 	<div class="jumbotron jumbotron-fluid text-white bg-info">
 	  <div class="container text-center pt-5">
-	    <img class="d-lg mb-3 rounded-circle border border-white" src="imges/default.jpeg" alt="This is my profile" width="150px" height="150px">
+	    <img class="d-lg mb-3 rounded-circle border border-white img-fluid" src="imges/default.jpeg" alt="This is my profile">
 	    <p class="lead"><strong>Jason Wang</strong></p>
 	  </div>
 	</div>
@@ -38,7 +39,7 @@
 	<div class="container">
 		<!-- About begin -->
 		<h1 class="my-4 text-center text-muted" id="about">About</h1>		
-		<div class="col-md-9 mx-auto bg-light">
+		<div class="col-md-9 mx-auto about-card">
 			<h4 class="text-center">Who I am</h4>
 			<p>I am a front end developer who always keeps learning new things to develop professionally. I am a kind curious and creative person as well</p>
 			
@@ -60,47 +61,57 @@
 			<div class="container  col-md-6 col-lg-4">
 				<div class="img-card">
 					<a href="#" class="callModal">
-						<img class="img-fluid border border-dark" data-info="responsive" src="imges/responsive.png" alt="Card image cap">
-						<p class="img-info" data-info="responsive">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+						<img class="img-fluid border border-secondary rounded" data-info="responsive" src="imges/responsive.png" alt="Responsive Layout">
+						<p class="img-info pt-2 pl-3" data-info="responsive">In this project I built a responsive, mobile-first layout using HTML and CSS. The layout could demonstrate an understanding of responsive design.</p>
 					</a>
 				</div>				
-				<h4 class="card-title my-4"><a href="#" data-info="responsive" class="callModal">Card title</a></h4>
+				<h4 class="card-title my-4"><a href="#" data-info="responsive" class="callModal">Responsive Layout</a></h4>
 			</div>
 			<div class="container col-md-6 col-lg-4">
 				<div class="img-card">
-					<img class="img-fluid border border-dark" src="imges/photo-gallery.png" alt="Card image cap">
-					<p class="img-info">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					<a href="#" class="callModal">
+						<img class="img-fluid border border-secondary rounded" data-info="photo" src="imges/photo-gallery.png" alt="Photo Gallery">
+						<p class="img-info pt-2 pl-3" data-info="photo">In this project, I created an interactive photo gallery using JavaScript and jQuery. Thumbnails and photos were provided with descriptions.</p>
+					</a>
 				</div>				
-				<h4 class="card-title my-4">Card title</h4>									
+				<h4 class="card-title my-4"><a href="#" data-info="photo" class="callModal">Interactive Photo Gallery</a></h4>									
 			</div>
-			<div class="container  col-md-6 col-lg-4">
+			<div class="container col-md-6 col-lg-4">
 				<div class="img-card">
-					<img class="img-fluid border border-dark" src="imges/game.png" alt="Card image cap">
-					<p class="img-info">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					<a href="#" class="callModal">
+						<img class="img-fluid border border-secondary rounded" data-info="game" src="imges/game.png" alt="Game Show">
+						<p class="img-info pt-2 pl-3" data-info="game">In this project I created a browser version of “Wheel of Success”, a word guessing game where players will click letters from an onscreen keyboard to try to guess a random phrase.</p>
+					</a>
 				</div>				
-				<h4 class="card-title my-4">Card title</h4>									
+				<h4 class="card-title my-4"><a href="#" data-info="game" class="callModal">Game Show</a></h4>									
 			</div>	
-			<div class="container  col-md-6 col-lg-4">
+			<div class="container col-md-6 col-lg-4">
 				<div class="img-card">
-					<img class="img-fluid border border-dark" src="imges/dashboard.png" alt="Card image cap">
-					<p class="img-info">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					<a href="#" class="callModal">
+						<img class="img-fluid border border-secondary rounded" data-info="dashboard" src="imges/dashboard.png" alt="Dashboard">
+						<p class="img-info pt-2 pl-3" data-info="dashboard">In this project, I took a mockup and a few icons and built a beautiful, web dashboard complete with JavaScript-driven charts and graphs.</p>
+					</a>
 				</div>				
-				<h4 class="card-title my-4">Card title</h4>									
+				<h4 class="card-title my-4"><a href="#" data-info="dashboard" class="callModal">Dashboard</a></h4>									
 			</div>
-			<div class="container  col-md-6 col-lg-4">
+			<div class="container col-md-6 col-lg-4">
 				<div class="img-card">
-					<img class="img-fluid border border-dark" src="imges/employee.png" alt="Card image cap">
-					<p class="img-info">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					<a href="#" class="callModal">
+						<img class="img-fluid border border-secondary rounded" data-info="employee" src="imges/employee.png" alt="Employee Directory">
+						<p class="img-info pt-2 pl-3" data-info="employee">In this project, I use the Random User Generator API to grab information for 12 random “employees,” and use that data to build a prototype for an Awesome Startup employee directory.</p>
+					</a>
 				</div>				
-				<h4 class="card-title my-4">Card title</h4>									
-			</div>
-			<div class="container  col-md-6 col-lg-4">
+				<h4 class="card-title my-4"><a href="#" data-info="employee" class="callModal">Employee Directory</a></h4>									
+			</div>	
+			<div class="container col-md-6 col-lg-4">
 				<div class="img-card">
-					<img class="img-fluid border border-dark" src="imges/react.png" alt="Card image cap">
-					<p class="img-info">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					<a href="#" class="callModal">
+						<img class="img-fluid border border-secondary rounded" data-info="flickr" src="imges/flickr.png" alt="Flickr Gallery">
+						<p class="img-info pt-2 pl-3" data-info="flickr">In this project, I create an image gallery using React and the Flickr API. I build the gallery components, write the CSS and set up routing.</p>
+					</a>
 				</div>				
-				<h4 class="card-title my-4">Card title</h4>									
-			</div>					
+				<h4 class="card-title my-4"><a href="#" data-info="flickr" class="callModal">Flickr Gallery</a></h4>									
+			</div>				
 		</div>
 		<!-- Projects end -->
 		<hr>
@@ -133,12 +144,16 @@
 	        </button>
 	      </div>
 	      <div class="modal-body">
-	      	<img class="mx-auto d-block border border-dark" src="">
+	      	<img class="mx-auto d-block border border-secondary rounded" src="#" alt="#">
 	      	<div class="my-3 text-center">
 	      		<span class="badge badge-primary">HTML</span>
 	      		<span class="badge badge-success">CSS</span>
 	      	</div>
-		  	<p></p>
+		  	<p class="col-11 mx-auto"></p>
+		  	<div class="container text-center">
+		  		<a class="border border-primary rounded p-1 mr-2" href="#" target="_blank">VIEW DEMO</a>
+		  		<a class="border border-primary rounded p-1" href="#" target="_blank">VIEW SOURCE</a>
+		  	</div>
 	      </div>
 	    </div>
 	  </div>
@@ -146,7 +161,6 @@
 	<!-- modal end -->
 <script src="lib/jquery-3.3.1.min.js"></script>
 <script src="lib/bootstrap.min.js"></script>
-<script src="data.json"></script>
 <script src="main.js"></script>
 </body>
 </html>
