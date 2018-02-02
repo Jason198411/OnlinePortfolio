@@ -8,6 +8,9 @@ a{
 a:hover{
  	text-decoration:none;
 }
+html, body{
+	min-width: 415px;	
+}
 
 nav{
 	font-size: 20px;
