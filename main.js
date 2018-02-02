@@ -64,7 +64,7 @@ $(".navbar a[href^='#']").on('click', function(event){
 //Display modal
 $(".callModal").on('click', function (event){
    event.preventDefault();
-   var parm = $(event.target).attr("data-info")  //get data-info to identify which project was click 
+   var parm = $(event.target).attr("data-info");  //get data-info to identify which project was click 
    $(".modal-title").text(coll[parm].projectName);//set title
    $(".modal-body p").text(coll[parm].description);//set description
    $(".modal-body img").attr("src", coll[parm].img);//set project img 
@@ -74,7 +74,7 @@ $(".callModal").on('click', function (event){
    }else{
      $(".modal-body a").first().attr("href", coll[parm].linkDemo);
    }   
-   $(".modal-body a").last().attr("href", coll[parm].linkSource)
+   $(".modal-body a").last().attr("href", coll[parm].linkSource);
    // get each lable and apend to html
    for(var i = 0 ; i<coll[parm].lable.length ;i++ ){     
      var text ="<span class =\""+coll[parm].lable[i].lbClass+"\">"+coll[parm].lable[i].lb+"</span> ";
@@ -84,7 +84,7 @@ $(".callModal").on('click', function (event){
 })
 
 // initializ lables in modal
-var bedges = "<span class=\"badge badge-primary\">HTML</span> <span class=\"badge badge-success\">CSS</span> "
+var bedges = "<span class=\"badge badge-primary\">HTML</span> <span class=\"badge badge-success\">CSS</span> ";
 // when modal was hidden, remove all lables and back to initialization
 $('.modal').on('hidden.bs.modal', function (e) {
   $(".modal-body .text-center span").remove();
