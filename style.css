@@ -11,10 +11,13 @@ a:hover{
 html, body{
 	min-width: 415px;	
 }
-
+body{
+	display: none;
+}
 nav{
 	font-size: 20px;
 }
+
 .navbar-brand{
 	font-size: 30px;
 }

@@ -95,10 +95,11 @@ $('.modal').on('hidden.bs.modal', function (e) {
 
 //On the mobile version when scroll if the menu is open, close it 
 $( window ).scroll(function() {
-  console.log($( "#navbarNavAltMarkup" ).hasClass(".show"));
   if($( "#navbarNavAltMarkup" ).hasClass("show")){
     console.log("come here");
     $( "#navbarNavAltMarkup" ).removeClass("show");
   }
 });
  
+$( window ).on( "load", function() {$("body").fadeIn(2000);});
+
