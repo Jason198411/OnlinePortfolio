@@ -22,6 +22,7 @@ nav{
 	font-size: 30px;
 }
 .lead{
+	display: none;
 	font-size: 30px;
 	text-shadow: 2px 2px 4px #000000;
 }
@@ -122,10 +123,8 @@ nav{
 }
 .modal a:hover{
 	color: white;
-	background-color: #17a2b8;
-    
+	background-color: #17a2b8;    
 }
-
 .loading{
 	height: 100vh;
 	width: 100%;
