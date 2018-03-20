@@ -100,8 +100,7 @@ $( window ).scroll(function() {
     $( "#navbarNavAltMarkup" ).removeClass("show");
   }
 });
-//Set fadein after 2000ms 
-$( window ).on( "load", function() {$("body").fadeIn(1000);});
+
 //Set loading page
 $( window ).on( "load", function() {setTimeout(() =>{
   $("body").removeClass("noScroll");
