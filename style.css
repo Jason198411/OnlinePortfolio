@@ -11,10 +11,13 @@ a:hover{
 html, body{
 	min-width: 415px;	
 }
-
+body{
+	display: none;
+}
 nav{
 	font-size: 20px;
 }
+
 .navbar-brand{
 	font-size: 30px;
 }
@@ -123,3 +126,13 @@ nav{
     
 }
 
+.loading{
+	height: 100vh;
+	width: 100%;
+	background-color: #eaebed;
+	z-index: 9999999;
+}
+.noScroll{
+	overflow: hidden;
+	height: 100%;
+}

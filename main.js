@@ -95,10 +95,17 @@ $('.modal').on('hidden.bs.modal', function (e) {
 
 //On the mobile version when scroll if the menu is open, close it 
 $( window ).scroll(function() {
-  console.log($( "#navbarNavAltMarkup" ).hasClass(".show"));
   if($( "#navbarNavAltMarkup" ).hasClass("show")){
     console.log("come here");
     $( "#navbarNavAltMarkup" ).removeClass("show");
   }
 });
- 
+//Set fadein after 2000ms 
+$( window ).on( "load", function() {$("body").fadeIn(1000);});
+//Set loading page
+$( window ).on( "load", function() {setTimeout(() =>{
+  $("body").removeClass("noScroll");
+  $(".loading").hide();
+  $(".navbar").addClass("fixed-top");
+}, 2000)});
+
