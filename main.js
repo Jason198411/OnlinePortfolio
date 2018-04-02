@@ -50,6 +50,9 @@ var coll = {
     "description": "In this project, I created an image gallery using React and the Flickr API. I built the gallery components, wrote the CSS and set up routing. The page include a Search link that includes a search field to let users search for photos. Under the search field, there are 3 links that return a list of photos matching the criteria I used React Router to set up routes for each navigation link in the directory app."
   }   
 }
+
+
+new WOW().init();
 // scroll to target smoothly
 $(".navbar a[href^='#']").on('click', function(event){
       event.preventDefault();
@@ -107,7 +110,9 @@ $( window ).on( "load", function() {setTimeout(() =>{
   $("body").removeClass("noScroll");
   $(".loading").hide();
   $(".navbar").addClass("fixed-top");
-  $('.lead').slideDown(1000);
-}, 2000)});
+}, 500)});
 
-//$('.lead').animate({'margin-top': '50px'}, 5000);
+
+
+
+
