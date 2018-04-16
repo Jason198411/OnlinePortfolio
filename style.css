@@ -1,54 +1,119 @@
+
+
+/****************
+	Global setting
+***************/
 * {
 	box-sizing: border-box;
 }
-a{
-	text-decoration:none;
 
-}
-a:hover{
- 	text-decoration:none;
-}
 html, body{
 	min-width: 415px;	
 }
-body{
-	display: none;
+
+a{
+	text-decoration:none;
+	color: #000;
 }
+
+a:hover{
+	text-decoration: none;
+	color:#000;
+}
+
+ul{
+	 list-style-type: none;
+	 width: 100%;
+	 padding: 0;
+}
+
+span{
+	color: #009688;;
+}
+
 nav{
 	font-size: 20px;
 }
 
-.navbar-brand{
-	font-size: 30px;
-}
-.lead{
-	/*display: none;*/
-	font-size: 30px;
-	text-shadow: 2px 2px 4px #000000;
-}
-.about-card{
-	font-size: 1.2rem;
+.active{
+	background-color: #cccccc;
 }
 
-.contact{
-	font-size: 20px;
-}
-.jumbotron{
-	background-image: url("imges/jumbo-bg.jpg");
-	-webkit-background-size: cover;
-	background-size: cover;
-
-}
-.jumbotron img{
-	width: 150px;
-	height: 150px;
-	transition: all 0.3s ease-out 0s;
-}
-.jumbotron img:hover{	
-	transform: scale(1.2);
+.row{
+	margin:0 15px;	
 }
 
+.date{
+	font-size: 0.9rem;
+	color: #009688;
+}
 
+.loading{
+	height: 100vh;
+	width: 100%;
+	background-color: #eaebed;
+	z-index: 9999999;
+}
+
+/*.noScroll{
+	overflow: hidden;
+	height: 100%;
+}*/
+
+/****************
+	Sidebar setting
+***************/
+
+.sidebar {
+	background: #fff;
+	width: 100%;
+	margin-top: 15px;	
+	box-shadow: 0 0 10px grey;		   
+	overflow-y: auto;	
+}
+
+.sidebar img {
+	width: 50%;
+}
+
+.sidebar ul li span{
+	font-size: 16px;
+}
+
+.sidebar ul li:hover{
+ 	text-decoration:none;
+ 	background-color: #cccccc;
+}
+.sidebar a{
+	width: 80%;
+}
+/****************
+	Content setting
+***************/
+.content{
+	font-size: 18px;
+	background: #fff;
+	margin-top: 15px;	
+}
+
+#about, #projects, #experience, #eduction{
+	box-shadow: 0 0 10px grey;
+}
+
+.subtitle span{
+	font-size: 1.5rem;
+}
+
+.col{
+	padding: 0;
+}
+
+.icon-cal{
+	font-size: 0.8rem;
+}
+/****************
+	Project section setting
+***************/
 .img-card{
 	position: relative;
 	overflow: hidden;
@@ -59,8 +124,9 @@ nav{
 	height: 40%;
 	width: 100%;
 }
+
 .img-info{
-	font-size: 1rem;
+	font-size: 0.9rem;
 	position: absolute;  
 	top: 45%;
 	bottom: 0;
@@ -74,33 +140,44 @@ nav{
 	transition: all 0.5s ease-in-out 0.2s;
 	transform: translateY(100%);
 }
+
 .img-card:hover .img-info{
 
 	visibility: visible;
     opacity: 1;
     transform: translateY(0);  
 }
+
 .img-card:hover{
 	cursor: pointer;
 }
 
-.row .container h4 a:hover{
+#projects h4 a{
+	color: #009688;
+}
+
+#projects h4 a:hover{
 	cursor: pointer;
+	opacity: 0.6;
+	
+}
+
+/****************
+	Eduction section setting
+***************/
+#eduction p{
+	font-weight: 500;
 }
 
 
 
-.container .nav a{
-  display: inline-block;
-  width: 30px;
-  height: 30px;
-  opacity: 0.4; 
-  transition: all .5s;
-}
-.container .nav a:hover{
-	opacity: 1;
-	cursor: pointer;
-}
+
+
+
+
+/****************
+	footer section setting
+***************/
 .twitter{
 	background-image: url(imges/twitter.svg);
 }
@@ -111,7 +188,9 @@ nav{
 	background-image: url(imges/github.svg);
 }
 
-
+/****************
+	Modal section setting
+***************/
 .modal img{
 	width: 60%;	
 }
@@ -125,13 +204,47 @@ nav{
 	color: white;
 	background-color: #17a2b8;    
 }
-.loading{
-	height: 100vh;
-	width: 100%;
-	background-color: #eaebed;
-	z-index: 9999999;
+
+/****************
+	social section setting
+***************/
+
+#social .nav a{
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  opacity: 0.4; 
+  transition: all .5s;
 }
-.noScroll{
-	overflow: hidden;
-	height: 100%;
+#social .nav a:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+
+
+
+
+
+@media (min-width: 768px) {
+	.sidebar{
+		position: fixed;
+		width: 300px;
+		height: 95vh;
+	}
+
+	.sidebar img{
+		width: 100%;
+		margin: 0!important;
+		border-radius:0 !important ;
+	}
+
+	.content{
+		margin-left: 320px;
+	}
+
+	#navbarSupportedContent{
+		text-align: left !important;
+	}
+
+
 }
