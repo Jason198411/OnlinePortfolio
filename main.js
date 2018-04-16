@@ -54,7 +54,7 @@ var coll = {
 
 new WOW().init();
 // scroll to target smoothly
-$(".navbar a[href^='#']").on('click', function(event){
+$(".sidebar a[href^='#']").on('click', function(event){
       event.preventDefault();
       var hash=this.hash;
       $('html, body').animate({
@@ -97,22 +97,29 @@ $('.modal').on('hidden.bs.modal', function (e) {
 
 
 //On the mobile version when scroll if the menu is open, close it 
-$( window ).scroll(function() {
-  if($( "#navbarNavAltMarkup" ).hasClass("show")){
-    console.log("come here");
-    $( "#navbarNavAltMarkup" ).removeClass("show");
-  }
-});
-//Set fadein after 1000ms 
-$( window ).on( "load", function() {$("body").fadeIn(1000);});
+// $( window ).scroll(function() {
+//   if($( "#navbarNavAltMarkup" ).hasClass("show")){
+//     console.log("come here");
+//     $( "#navbarNavAltMarkup" ).removeClass("show");
+//   }
+// });
+
 //Set loading page
 $( window ).on( "load", function() {setTimeout(() =>{
   $("body").removeClass("noScroll");
   $(".loading").hide();
   $(".navbar").addClass("fixed-top");
-}, 500)});
+}, 1000)});
 
 
-
-
-
+//whenclick sidebar the mark change
+$(".sidebar ul li").on('click', function(e){
+    $(".sidebar ul li").removeClass("active");
+    var target = $( e.target );
+    if ( target.is( "li" ) ) {
+      target.addClass("active");
+    }else if(target.is( "a" ) ){
+      target.parent().addClass("active");
+    }
+    
+})

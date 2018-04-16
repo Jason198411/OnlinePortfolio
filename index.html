@@ -2,168 +2,283 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Profile</title>
+	<title>Protfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="lib/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css">
+	<link href="lib/open-iconic-master/font/css/open-iconic-bootstrap.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body class="bg-light noScroll" data-spy="scroll" data-target=".navbar" data-offset="100" id="home">
-	<div class="loading fixed-top">
+<body class="bg-light" data-spy="scroll">
+	<!-- Loading -->
+	<div class="loading fixed-top fadeOut animated wow" data-wow-delay="1s">
 		<h1 class="text-center pt-5">The Website is Loading</h1>
 		<img class="mx-auto d-block" src="imges/Spinx.svg">
 	</div>	
-	<!-- Nav bar -->
-	<nav class="navbar navbar-expand-md navbar-dark bg-secondary">
-		<div class="container" >
-			<a class="navbar-brand" href="#">Protfolio</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			<div class="navbar-nav">
-			  <a class="nav-item nav-link pl-3" href="#home">Home</a>
-			  <a class="nav-item nav-link pl-3" href="#about">About</a>
-			  <a class="nav-item nav-link pl-3" href="#projects">Projects</a>
-			  <a class="nav-item nav-link pl-3" href="#contact">Contact</a>
-			</div>
-			</div>
-		</div>	
-	</nav>
-	<!-- end of nav -->
-	
-	<!-- jumbotron begin -->
-	<div class="jumbotron jumbotron-fluid text-white bg-info">
-	  <div class="container text-center pt-5 fadeInUp animated wow" data-wow-delay="0.6s">
-	    <img class="d-lg mb-3 rounded-circle border border-white img-fluid" src="imges/me.jpg" alt="This is my profile">
-	    <p class="lead "><strong>Jason Wang</strong></p>
-	  </div>
-	</div>
-	<!-- jumbotron end -->
-	
-	<div class="container">
-		<!-- About begin -->
-		<h1 class="my-4 text-center text-muted fadeInUp animated wow" id="about" data-wow-delay="0.8s">About</h1>		
-		<div class="col-md-9 mx-auto about-card">
-			<h4 class="text-center fadeInUp animated wow" data-wow-delay="1s">Who I am</h4>
-			<p class="fadeInUp animated wow" data-wow-delay="1.2s">I am a front end developer who always keeps learning new things to develop professionally. I am a kind curious and creative person as well</p>
-			
-			<h4 class="text-center fadeInUp animated wow" data-wow-delay="0.4s">What I know</h4>
-			<ul class="fadeInUp animated wow" data-wow-delay="0.6s">
-				<li>Proficient in HTML CSS Javascript jQuery</li>
-				<li>Adept in using Front End frameworks – Bootstrap, React</li>
-				<li>Keen understanding of responsive design principles</li>
-				<li>Creative problem solver</li>
-			</ul>						
-			<h4 class="text-center fadeInUp animated wow" data-wow-delay="0.8s">What I'm looking for</h4>
-			<p class="fadeInUp animated wow" data-wow-delay="1s"> I am seeking a Front End Development position and hope to share my skills, expertise, and experience with your team and valuable clients.</p>
-		</div>
-		<!-- About end -->
-		<hr>
-		<!-- Projects begin -->
-		<h1 class="my-4 text-center text-muted" id="projects">Projects</h1>		
+	<!--Mian container -->
 		<div class="row">
-			<div class="container col-md-6 col-lg-4 col-10 fadeInUp animated wow" data-wow-delay="0.6s">
-				<div class="img-card">
-					<a href="#" class="callModal">
-						<img class="img-fluid border border-secondary rounded" data-info="responsive" src="imges/responsive.png" alt="Responsive Layout">
-						<p class="img-info pt-2 pl-3" data-info="responsive">In this project I built a responsive, mobile-first layout using HTML and CSS. The layout could demonstrate an understanding of responsive design.</p>
-					</a>
-				</div>				
-				<h4 class="card-title my-4"><a href="#" data-info="responsive" class="callModal">Responsive Layout</a></h4>
-			</div>
-			<div class="container col-md-6 col-lg-4 col-10 fadeInUp animated wow" data-wow-delay="1s">
-				<div class="img-card">
-					<a href="#" class="callModal">
-						<img class="img-fluid border border-secondary rounded" data-info="photo" src="imges/photo-gallery.png" alt="Photo Gallery">
-						<p class="img-info pt-2 pl-3" data-info="photo">In this project, I created an interactive photo gallery using JavaScript and jQuery Plugins. Thumbnails and photos were provided with descriptions.</p>
-					</a>
-				</div>				
-				<h4 class="card-title my-4"><a href="#" data-info="photo" class="callModal">Interactive Photo Gallery</a></h4>									
-			</div>
-			<div class="container col-md-6 col-lg-4 col-10 fadeInUp animated wow" data-wow-delay="1.4s">
-				<div class="img-card">
-					<a href="#" class="callModal">
-						<img class="img-fluid border border-secondary rounded" data-info="game" src="imges/game.png" alt="Game Show">
-						<p class="img-info pt-2 pl-3" data-info="game">In this project I created a browser version of “Wheel of Success”, a word guessing game where players will click letters from an onscreen keyboard to try to guess a random phrase.</p>
-					</a>
-				</div>				
-				<h4 class="card-title my-4"><a href="#" data-info="game" class="callModal">Game Show</a></h4>									
-			</div>	
-			<div class="container col-md-6 col-lg-4 col-10 fadeInUp animated wow" data-wow-delay="0.6s">
-				<div class="img-card">
-					<a href="#" class="callModal">
-						<img class="img-fluid border border-secondary rounded" data-info="dashboard" src="imges/dashboard.png" alt="Dashboard">
-						<p class="img-info pt-2 pl-3" data-info="dashboard">In this project, I took a mockup and a few icons and built a beautiful, web dashboard complete with JavaScript-driven charts and graphs.</p>
-					</a>
-				</div>				
-				<h4 class="card-title my-4"><a href="#" data-info="dashboard" class="callModal">Dashboard</a></h4>									
-			</div>
-			<div class="container col-md-6 col-lg-4 col-10 fadeInUp animated wow" data-wow-delay="1s">
-				<div class="img-card">
-					<a href="#" class="callModal">
-						<img class="img-fluid border border-secondary rounded" data-info="employee" src="imges/employee.png" alt="Employee Directory">
-						<p class="img-info pt-2 pl-3" data-info="employee">In this project, I used the Random User Generator API to grab information for 12 random “employees,” and used that data to build a prototype for an Awesome Startup employee directory.</p>
-					</a>
-				</div>				
-				<h4 class="card-title my-4"><a href="#" data-info="employee" class="callModal">Employee Directory</a></h4>									
-			</div>	
-			<div class="container col-md-6 col-lg-4 col-10 fadeInUp animated wow" data-wow-delay="1.4s">
-				<div class="img-card">
-					<a href="#" class="callModal">
-						<img class="img-fluid border border-secondary rounded" data-info="flickr" src="imges/flickr.png" alt="Flickr Gallery">
-						<p class="img-info pt-2 pl-3" data-info="flickr">In this project, I created an image gallery using React and the Flickr API. I built the gallery components, wrote the CSS and set up routing.</p>
-					</a>
-				</div>				
-				<h4 class="card-title my-4"><a href="#" data-info="flickr" class="callModal">Flickr Gallery</a></h4>									
-			</div>				
-		</div>
-		<!-- Projects end -->
-		<hr>
-		<!-- Contact begin -->
-		<h1 class="my-4 text-center text-muted fadeInUp animated wow" id="contact" data-wow-delay="0.6s">Contact me</h1>			
-		<div class="col-md-9 mx-auto contact fadeInUp animated wow" data-wow-delay="0.8s">
-			<p class="text-center"><strong>Name</strong> : Jason Wang</p>
-			<p class="text-center"><strong>Cell phone</strong> : 0426707655</p>
-			<p class="text-center"><strong>Email</strong> : jasonwang198411@gmail.com</p>
-		</div>	
-		<!-- Contact end -->					
-	</div>
-	<!-- footer begin -->
-	<div class="container my-5" >
-		<ul class="nav justify-content-center">
-  			<li class="nav-item fadeInUp animated wow" data-wow-delay="0.6s"><a href="https://twitter.com/jasonwang198411" target="_blank" class ="twitter" ></a></li>
-  			<li class="nav-item mx-4 fadeInUp animated wow" data-wow-delay="0.8s"><a href="https://www.linkedin.com/in/%E9%91%AB-%E7%8E%8B-b8a00211b/" target="_blank" classtarget="_blank" class="linkedin"></a></li>
-  			<li class="nav-item fadeInUp animated wow" data-wow-delay="1s"><a href="https://github.com/Jason198411" target="_blank" class ="github"></a></li>
-  		</ul>
-	</div>
-	<!--footer end  -->
-	<!-- modal begin -->
-	<div class="modal fade" id="tempModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <h5 class="modal-title" id="exampleModalLabel">Title</h5>
-	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-	          <span aria-hidden="true">&times;</span>
-	        </button>
-	      </div>
-	      <div class="modal-body">
-	      	<img class="mx-auto d-block border border-secondary rounded" src="#" alt="#">
-	      	<div class="my-3 text-center">
-	      		<span class="badge badge-primary">HTML</span>
-	      		<span class="badge badge-success">CSS</span>
-	      	</div>
-		  	<p class="col-11 mx-auto"></p>
-		  	<div class="container text-center">
-		  		<a class="border border-primary rounded p-1 mr-2" href="#" target="_blank">VIEW DEMO</a>
-		  		<a class="border border-primary rounded p-1" href="#" target="_blank">VIEW SOURCE</a>
-		  	</div>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	<!-- modal end -->
+			<!-- Left nav bar begin  -->
+			<div class="sidebar fadeInLeft animated" >
+				<nav class="navbar-expand-md navbar-light">	
+					<img class="rounded-circle d-block mx-auto mt-3" src="imges/me.jpg" alt="My photo">
+					<div class="d-flex justify-content-center my-1">
+						<h2 class="text-center p-1 d-inline-block">Jason Wang</h2>	
+						<button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						    <span class="navbar-toggler-icon"></span>
+						</button>
+					</div>
+
+					<div class="collapse navbar-collapse text-center" id="navbarSupportedContent">	
+						<ul>
+							<li class="pl-3 py-2 active">
+								<span class="oi oi-person"></span>
+								<a class="pl-3 d-inline-block " href="#about">About Me</a>
+							</li>
+							<li class="pl-3 py-2">
+								<span class="oi oi-grid-three-up"></span>
+								<a class="pl-3 d-inline-block" href="#projects">Project Demos</a>
+							</li>
+							<li class="pl-3 py-2">
+								<span class="oi oi-briefcase"></span>
+								<a class="pl-3 d-inline-block" href="#experience">Work Experience</a>
+							</li>
+							<li class="pl-3 py-2">
+								<span class="oi oi-book"></span>
+								<a class="pl-3 d-inline-block" href="#eduction">Eduction</a>
+							</li>
+							<li class="pl-3 py-2">
+								<span class="oi oi-envelope-closed"></span>
+								<a class="pl-3 d-inline-block" href="#contact">Contact</a>
+							</li>
+						</ul>				
+					</div>
+				</nav>
+			</div><!-- Left nav bar end  -->
+			<!-- Main content -->
+			<div class="col content">
+				<!-- About begin -->
+				<section id="about">
+					<div class="subtitle py-4 px-5">
+						<span class="oi oi-person"></span>
+						<h2 class="d-inline-block pl-3 fadeInUp animated wow" data-wow-delay="0.8s">About Me</h2>
+					</div>							
+					<div class="col-md-12 px-5 pb-4">
+						<h4 class="fadeInUp animated wow" data-wow-delay="0.6s">Who I am</h4>
+						<p class="fadeInUp animated wow" data-wow-delay="0.6s">I am Jason, a web developer who always keeps learning new things to develop professionally. I was born in China, Now I am in Sydney. In my previous job, I participated in information construction of China National Petroleum Corporation which is one of the world's top 500 companies. I was focusing on construction and maintenance Service Management Process System, SMS Platform System and Information Content Audit System etc.</p>
+						
+						<h4 class="fadeInUp animated wow" data-wow-delay="0.6s">What I know</h4>
+						<ul class="fadeInUp animated wow" data-wow-delay="0.6s">
+							<li>
+								&nbsp;&nbsp;<span class="oi oi-task"></span>&nbsp;&nbsp;&nbsp;Proficient in HTML CSS Javascript jQuery
+							</li>
+							<li>
+								&nbsp;&nbsp;<span class="oi oi-task"></span>&nbsp;&nbsp;&nbsp;Adept in using Front End frameworks – Bootstrap, React
+							</li>
+							<li>
+								&nbsp;&nbsp;<span class="oi oi-task"></span>&nbsp;&nbsp;&nbsp;Keen understanding of responsive design principles
+							</li>
+							<li>
+								&nbsp;&nbsp;<span class="oi oi-task"></span>&nbsp;&nbsp;&nbsp;Creative problem solver
+							</li>
+						</ul>						
+						<h4 class="fadeInUp animated wow" data-wow-delay="0.6s">What I'm looking for</h4>
+						<p class="fadeInUp animated wow" data-wow-delay="0.6s"> I am seeking a Front End Development position and hope to share my skills, expertise, and experience with your team and valuable clients.</p>
+					</div>
+				</section><!-- About end -->
+				
+				<!-- Projects begin -->
+				<section id="projects" class="mt-4">
+					<div class="subtitle py-4 px-5">
+						<span class="oi oi-grid-three-up"></span>
+						<h2 class="d-inline-block pl-3 fadeInUp animated wow" data-wow-delay="0.8s">Porject Demos</h2>
+					</div>
+					<div class="row">
+						<!-- Card 1 -->
+						<div class="container col-xl-4 col-lg-6 col-10 fadeInUp animated wow" data-wow-delay="0.6s">
+							<div class="img-card">
+								<a href="#" class="callModal">
+									<img class="img-fluid border border-secondary rounded" data-info="responsive" src="imges/responsive.png" alt="Responsive Layout">
+									<p class="img-info pt-2 pl-3" data-info="responsive">In this project I built a responsive, mobile-first layout using HTML and CSS. The layout could demonstrate an understanding of responsive design.</p>
+								</a>
+							</div>				
+							<h4 class="card-title my-4"><a href="#" data-info="responsive" class="callModal">Responsive Layout</a></h4>
+						</div>
+						<!-- Card 2 -->
+						<div class="container col-xl-4 col-lg-6 col-10 fadeInUp animated wow" data-wow-delay="1s">
+							<div class="img-card">
+								<a href="#" class="callModal">
+									<img class="img-fluid border border-secondary rounded" data-info="photo" src="imges/photo-gallery.png" alt="Photo Gallery">
+									<p class="img-info pt-2 pl-3" data-info="photo">In this project, I created an interactive photo gallery using JavaScript and jQuery Plugins. Thumbnails and photos were provided with descriptions.</p>
+								</a>
+							</div>				
+							<h4 class="card-title my-4"><a href="#" data-info="photo" class="callModal">Interactive Photo Gallery</a></h4>				
+						</div>
+						<!-- Card 3 -->
+						<div class="container col-xl-4 col-lg-6 col-10 fadeInUp animated wow" data-wow-delay="1.4s">
+							<div class="img-card">
+								<a href="#" class="callModal">
+									<img class="img-fluid border border-secondary rounded" data-info="game" src="imges/game.png" alt="Game Show">
+									<p class="img-info pt-2 pl-3" data-info="game">In this project I created a browser version of “Wheel of Success”, a word guessing game where players will click letters from an onscreen keyboard to try to guess a random phrase.</p>
+								</a>
+							</div>				
+							<h4 class="card-title my-4"><a href="#" data-info="game" class="callModal">Game Show</a></h4>									
+						</div>	
+						<!-- Card 4 -->
+						<div class="container col-xl-4 col-lg-6 col-10 fadeInUp animated wow" data-wow-delay="0.6s">
+							<div class="img-card">
+								<a href="#" class="callModal">
+									<img class="img-fluid border border-secondary rounded" data-info="dashboard" src="imges/dashboard.png" alt="Dashboard">
+									<p class="img-info pt-2 pl-3" data-info="dashboard">In this project, I took a mockup and a few icons and built a beautiful, web dashboard complete with JavaScript-driven charts and graphs.</p>
+								</a>
+							</div>				
+							<h4 class="card-title my-4"><a href="#" data-info="dashboard" class="callModal">Dashboard</a></h4>						
+						</div>
+						<!-- Card 5 -->
+						<div class="container col-xl-4 col-lg-6 col-10 fadeInUp animated wow" data-wow-delay="1s">
+							<div class="img-card">
+								<a href="#" class="callModal">
+									<img class="img-fluid border border-secondary rounded" data-info="employee" src="imges/employee.png" alt="Employee Directory">
+									<p class="img-info pt-2 pl-3" data-info="employee">In this project, I used the Random User Generator API to grab information for 12 random “employees,” and used that data to build a prototype for an Awesome Startup employee directory.</p>
+								</a>
+							</div>				
+							<h4 class="card-title my-4"><a href="#" data-info="employee" class="callModal">Employee Directory</a></h4>									
+						</div>	
+						<!-- Card 6 -->
+						<div class="container col-xl-4 col-lg-6 col-10 fadeInUp animated wow" data-wow-delay="1.4s">
+							<div class="img-card">
+								<a href="#" class="callModal">
+									<img class="img-fluid border border-secondary rounded" data-info="flickr" src="imges/flickr.png" alt="Flickr Gallery">
+									<p class="img-info pt-2 pl-3" data-info="flickr">In this project, I created an image gallery using React and the Flickr API. I built the gallery components, wrote the CSS and set up routing.</p>
+								</a>
+							</div>				
+							<h4 class="card-title my-4"><a href="#" data-info="flickr" class="callModal">Flickr Gallery</a></h4>				
+						</div>				
+					</div><!--Projects row end -->
+				</section><!-- Projects end -->
+
+				<!-- Work Experience begin -->
+				<section id="experience" class="mt-4 pb-3 fadeInUp animated wow" data-wow-delay="0.6s" >
+					<div class="subtitle py-4 px-5">
+						<span class="oi oi-briefcase"></span>
+						<h2 class="d-inline-block pl-3">Work Experience</h2>
+					</div>
+					<div class="ml-5">
+						<h5>Security Software Engineer/ China National Petroleum Corporation</h5>
+						&nbsp;&nbsp;<span class="oi oi-calendar icon-cal"></span>
+						<p class="date d-inline-block pl-2">03/2013 – 05/2016</p>
+						<ul>
+							<li class="p-1">
+								&nbsp;&nbsp;<span class="oi oi-check"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+								Led group to contribute the construction of Information Content Audit System.
+							</li>
+							<li class="p-1">
+								&nbsp;&nbsp;<span class="oi oi-check"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+								Responsible for construction, installation, maintenance Data Classification Platform
+							</li>
+							<li class="p-1">
+								&nbsp;&nbsp;<span class="oi oi-check"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+								Improve usability and convenience of Data Classification Platform
+							</li>
+							<li class="p-1">
+								&nbsp;&nbsp;<span class="oi oi-check"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+								Wrote support documentation and provided training to internal and external users
+							</li>
+						</ul>
+					</div>
+					<div class="ml-5">
+						<h5>Software Developer / China National Petroleum Corporation</h5>
+						&nbsp;&nbsp;<span class="oi oi-calendar icon-cal"></span>
+						<p class="date d-inline-block pl-2">07/2008 – 02/2013</p>
+						<ul>
+							<li class="p-1">
+								&nbsp;&nbsp;<span class="oi oi-check"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+								Utilized Java and SSH to develop SMS Platform System.
+							</li>
+							<li class="p-1">
+								&nbsp;&nbsp;<span class="oi oi-check"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+								Utilized JSP, Web Service, Oracle and Tomcat to develop Service Management Process System.
+							</li>
+							<li class="p-1">
+								&nbsp;&nbsp;<span class="oi oi-check"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+								Updated and streamlined existing code to improve site performance.
+							</li>
+							<li class="p-1">
+								&nbsp;&nbsp;<span class="oi oi-check"></span>&nbsp;&nbsp;&nbsp;&nbsp;
+								Wrote support documentation and provided training to internal and external users. 
+							</li>
+						</ul>
+					</div>
+				</section><!-- Work Experience end -->
+				
+				<!-- Eduction begin -->
+				<section id="eduction" class="mt-4 pb-3 fadeInUp animated wow" data-wow-delay="0.6s">
+					<div class="subtitle py-4 px-5">
+						<span class="oi oi-book"></span>
+						<h2 class="d-inline-block pl-3">Eduction</h2>
+					</div>
+					<div class="ml-5">
+						<span class="oi oi-calendar icon-cal"></span>
+						<span class="date d-inline-block pl-2">2018</span>
+						<p>Front End Web Development / Treehouse</p>
+						<span class="oi oi-calendar icon-cal"></span>
+						<span class="date d-inline-block pl-2">2004-2008</span>
+						<p>Software Engineering / Northeastern University, China</p>
+					</div>	
+				</section>
+
+
+				<!-- Contact begin -->
+				<div id="contact" class="ml-4 text-center fadeInUp animated wow" data-wow-delay="0.6s">
+				
+					<div class="my-4 ">
+						<span class="oi oi-phone"></span>&nbsp;&nbsp;
+						<span>:&nbsp;&nbsp;0426707655</span>
+
+					</div>	
+					<div class="my-2">
+						<span class="oi oi-envelope-closed align-middle"></span>&nbsp;&nbsp;
+						<span class="align-middle">:&nbsp;&nbsp;jasonwang198411@gmail.com</span>					
+					</div>
+				</div><!-- Contact end -->
+
+				<!-- social begin -->
+				<section id="social" class="my-5 text-center" >
+					<ul class="nav justify-content-center">
+			  			<li class="nav-item fadeInUp animated wow" data-wow-delay="0.6s"><a href="https://twitter.com/jasonwang198411" target="_blank" class ="twitter" ></a></li>
+			  			<li class="nav-item mx-4 fadeInUp animated wow" data-wow-delay="0.8s"><a href="https://www.linkedin.com/in/%E9%91%AB-%E7%8E%8B-b8a00211b/" target="_blank" classtarget="_blank" class="linkedin"></a></li>
+			  			<li class="nav-item fadeInUp animated wow" data-wow-delay="1s"><a href="https://github.com/Jason198411" target="_blank" class ="github"></a></li>
+			  		</ul>
+				</section><!--social end  -->
+				
+				<!-- Modal begin -->
+				<div class="modal fade" id="tempModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+							    <h5 class="modal-title" id="exampleModalLabel">Title</h5>
+							    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							      <span aria-hidden="true">&times;</span>
+							    </button>
+							</div>
+							<div class="modal-body">
+							  	<img class="mx-auto d-block border border-secondary rounded" src="#" alt="#">
+							  	<div class="my-3 text-center">
+							  		<span class="badge badge-primary">HTML</span>
+							  		<span class="badge badge-success">CSS</span>
+							  	</div>
+							  	<p class="col-11 mx-auto"></p>
+							  	<div class="container text-center">
+							  		<a class="border border-primary rounded p-1 mr-2" href="#" target="_blank">VIEW DEMO</a>
+							  		<a class="border border-primary rounded p-1" href="#" target="_blank">VIEW SOURCE</a>
+							  	</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- Modal end -->				
+			</div><!-- Main content end -->
+		</div><!-- row end -->
+	<!-- Main container end -->
+
 <script src="lib/jquery-3.3.1.min.js"></script>
 <script src="lib/bootstrap.min.js"></script>
 <script src="lib/wow.min.js"></script>
